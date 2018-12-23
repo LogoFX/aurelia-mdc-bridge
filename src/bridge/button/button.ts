@@ -6,7 +6,6 @@ import * as util from '../util';
 @customAttribute('mdc-button')
 @inject(Element)
 export class MdcButton {
-  @bindable() public compact = false;
   @bindable() public dense = false;
   @bindable() public raised = false;
   @bindable() public stroked = false;
@@ -21,7 +20,6 @@ export class MdcButton {
   private attached() {
     this.element.classList.add('mdc-button');
 
-    this.compactChanged(this.compact);
     this.denseChanged(this.dense);
     this.raisedChanged(this.raised);
     this.strokedChanged(this.stroked);
@@ -38,18 +36,12 @@ export class MdcButton {
       'mdc-button',
       'mdc-button--dense',
       'mdc-button--raised',
-      'mdc-button--compact',
       'mdc-button--stroked',
       'mdc-button--unelevated',
       'mdc-card__action',
       'mdc-card__action--button'
     ];
     this.element.classList.remove(...classes);
-  }
-
-  private compactChanged(newValue) {
-    const value = util.getBoolean(newValue);
-    this.element.classList[value ? 'add' : 'remove']('mdc-button--compact');
   }
 
   private denseChanged(newValue) {

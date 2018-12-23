@@ -72,14 +72,14 @@
     "___end-docs___": ""
   },
   "dependencies": {
-    "material-components-web": "~0.30.0"
+    "material-components-web": "~0.33.0"
   },
   "peerDependencies": {},
   "devDependencies": {
     "@types/node": "^9.4.1",
     "@types/prismjs": "^1.9.0",
     "aurelia-bootstrapper": "^2.2.0",
-    "aurelia-cli": "^0.32.0",
+    "aurelia-cli": "1.0.0-beta.8",
     "aurelia-google-analytics": "^2.3.1",
     "aurelia-tools": "^2.0.0",
     "bluebird": "^3.5.1",
@@ -90,7 +90,7 @@
     "debounce": "^1.1.0",
     "dezalgo": "^1.0.3",
     "event-stream": "^3.3.4",
-    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp": "4.0",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-changed-in-place": "^2.3.0",
     "gulp-html-replace": "^1.6.2",

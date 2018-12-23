@@ -13,8 +13,6 @@ template
       br
       mdc-checkbox(checked.bind="dense") dense
       br
-      mdc-checkbox(checked.bind="compact") compact
-      br
       mdc-checkbox(checked.bind="stroked") stroked
       br
       mdc-checkbox(checked.bind="unelevated") unelevated
@@ -24,7 +22,7 @@ template
       section.components
         h6 Example
         button(
-          mdc-button="raised.bind: raised; dense.bind: dense; compact.bind: compact; stroked.bind: stroked; unelevated.bind: unelevated;"              
+          mdc-button="raised.bind: raised; dense.bind: dense; stroked.bind: stroked; unelevated.bind: unelevated;"              
           disabled.bind="aureliaDisabled") Button 1
         br
         br
@@ -43,7 +41,7 @@ template
       pre
         code-prism.
           &lt;button
-            mdc-button="raised.bind: raised; dense.bind: dense; compact.bind: compact; stroked.bind: stroked; unelevated.bind: unelevated;" 
+            mdc-button="raised.bind: raised; dense.bind: dense; stroked.bind: stroked; unelevated.bind: unelevated;" 
             disabled.bind="disabled"&gt;
             Button text
           &lt;/button&gt;
@@ -166,84 +164,76 @@ template
       section.components
         h5 Text Button
         fieldset(disabled.bind="disabled")
-          button(mdc-button="raised: false; dense: false; compact: false;") Default
+          button(mdc-button="raised: false; dense: false;") Default
 
-          button(mdc-button="raised: false; dense: false; compact: true;") Compact
+          button(mdc-button="raised: false; dense: true;") Dense
 
-          button(mdc-button="raised: false; dense: true; compact: false;") Dense
+          button.secondary-text(mdc-button="raised: false; dense: false;") Secondary
 
-          button.secondary-text(mdc-button="raised: false; dense: false; compact: false;") Secondary
-
-          button(mdc-button="raised: false; dense: false; compact: false;")
+          button(mdc-button="raised: false; dense: false;")
             i.material-icons.mdc-button__icon favorite
             | Icon
 
-          div(mdc-button="raised: false; dense: false; compact: false;" role="button") Div
+          div(mdc-button="raised: false; dense: false;" role="button") Div
 
           a(href="#/components/buttons"
-            mdc-button="raised: false; dense: false; compact: false;") Link
+            mdc-button="raised: false; dense: false;") Link
           
           hr
 
         h5 Raised Button
         fieldset(disabled.bind="disabled")
-          button(mdc-button="raised: true; dense: false; compact: false;") Default
+          button(mdc-button="raised: true; dense: false;") Default
 
-          button(mdc-button="raised: true; dense: false; compact: true;") Compact
+          button(mdc-button="raised: true; dense: true;") Dense
 
-          button(mdc-button="raised: true; dense: true; compact: false;") Dense
+          button.secondary-filled(mdc-button="raised: true; dense: false;") Secondary
 
-          button.secondary-filled(mdc-button="raised: true; dense: false; compact: false;") Secondary
-
-          button(mdc-button="raised: true; dense: false; compact: false;")
+          button(mdc-button="raised: true; dense: false;")
             i.material-icons.mdc-button__icon favorite
             | Icon
 
-          div(mdc-button="raised: true; dense: false; compact: false;" role="button") Div
+          div(mdc-button="raised: true; dense: false;" role="button") Div
 
           a(href="#/components/buttons"
-            mdc-button="raised: true; dense: false; compact: false;") Link
+            mdc-button="raised: true; dense: false;") Link
           
           hr
 
         h5 Unelevated Button (Experimental)
         fieldset(disabled.bind="disabled")
-          button(mdc-button="unelevated: true; raised: false; dense: false; compact: false;") Default
+          button(mdc-button="unelevated: true; raised: false; dense: false;") Default
 
-          button(mdc-button="unelevated: true; raised: false; dense: false; compact: true;") Compact
+          button(mdc-button="unelevated: true; raised: false; dense: true;") Dense
 
-          button(mdc-button="unelevated: true; raised: false; dense: true; compact: false;") Dense
+          button.secondary-filled(mdc-button="unelevated: true; raised: false; dense: false;") Secondary
 
-          button.secondary-filled(mdc-button="unelevated: true; raised: false; dense: false; compact: false;") Secondary
-
-          button(mdc-button="unelevated: true; raised: false; dense: false; compact: false;")
+          button(mdc-button="unelevated: true; raised: false; dense: false;")
             i.material-icons.mdc-button__icon favorite
             | Icon
 
-          div(mdc-button="unelevated: true; raised: false; dense: false; compact: false;" role="button") Div
+          div(mdc-button="unelevated: true; raised: false; dense: false;" role="button") Div
 
           a(href="#/components/buttons"
-            mdc-button="unelevated: true; raised: false; dense: false; compact: false;") Link
+            mdc-button="unelevated: true; raised: false; dense: false;") Link
           
           hr
 
         h5 Stroked Button (Experimental)
         fieldset(disabled.bind="disabled")
-          button(mdc-button="stroked: true; raised: false; dense: false; compact: false;") Default
+          button(mdc-button="stroked: true; raised: false; dense: false;") Default
 
-          button(mdc-button="stroked: true; raised: false; dense: false; compact: true;") Compact
+          button(mdc-button="stroked: true; raised: false; dense: true;") Dense
 
-          button(mdc-button="stroked: true; raised: false; dense: true; compact: false;") Dense
+          button.secondary-stroked(mdc-button="stroked: true; raised: false; dense: false;") Secondary
 
-          button.secondary-stroked(mdc-button="stroked: true; raised: false; dense: false; compact: false;") Secondary
-
-          button(mdc-button="stroked: true; raised: false; dense: false; compact: false;")
+          button(mdc-button="stroked: true; raised: false; dense: false;")
             i.material-icons.mdc-button__icon favorite
             | Icon
 
-          div(mdc-button="stroked: true; raised: false; dense: false; compact: false;" role="button") Div
+          div(mdc-button="stroked: true; raised: false; dense: false;" role="button") Div
 
           a(href="#/components/buttons"
-            mdc-button="stroked: true; raised: false; dense: false; compact: false;") Link
+            mdc-button="stroked: true; raised: false; dense: false;") Link
           
           hr
