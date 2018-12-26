@@ -1,0 +1,67 @@
+<template>
+    <div class="mdc-chip-set">
+        <div class="mdc-chip">
+          <div class="mdc-chip__checkmark" >
+            <svg class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
+              <path class="mdc-chip__checkmark-path" fill="none" stroke="black"
+                    d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+            </svg>
+          </div>
+          <div class="mdc-chip__text">Filterable content</div>
+        </div>
+
+        <div class="mdc-chip mdc-chip--selected">
+            <div class="mdc-chip__checkmark" >
+              <svg class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
+                <path class="mdc-chip__checkmark-path" fill="none" stroke="black"
+                      d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+              </svg>
+            </div>
+            <div class="mdc-chip__text">Filterable content 2</div>
+          </div>
+
+          <div class="mdc-chip">
+              <div class="mdc-chip__checkmark" >
+                <svg class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
+                  <path class="mdc-chip__checkmark-path" fill="none" stroke="black"
+                        d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                </svg>
+              </div>
+              <div class="mdc-chip__text">Filterable content 3</div>
+            </div>
+    </div>
+
+  <!-- SAMPLE-->
+  <mdc-grid>
+    <mdc-grid-cell span="12">
+      <h4>Chips</h4>
+    </mdc-grid-cell><!-- EXAMPLE-->
+    <mdc-grid-cell span="12">
+      <mdc-chip-set>
+        <mdc-chip selected="true">Chip 1</mdc-chip>
+        <mdc-chip>Chip 2</mdc-chip>
+        <mdc-chip>Chip 3</mdc-chip>
+        <mdc-chip>Chip 4</mdc-chip>
+      </mdc-chip-set>
+    </mdc-grid-cell><!-- LINKS-->
+    <mdc-grid-cell span="12">
+      <hr /><a href="https://material.io/components/web/catalog/chips/" target="_blank" data-analytics-category="external"
+        data-analytics-action="mdc-card">Material components documentation</a><br /><a href="https://material.io/guidelines/components/chips.html"
+        target="_blank" data-analytics-category="external" data-analytics-action="mdg-drawer">Material design
+        guidelines</a>
+      <hr />
+    </mdc-grid-cell><!-- MORE TO COME-->
+    <mdc-grid-cell span="12">
+      <section>
+        <h5>html</h5>
+        <pre><code-prism>  &lt;mdc-chip-set&gt;
+    &lt;mdc-chip&gt;Chip 1&lt;/mdc-chip&gt;
+    &lt;mdc-chip&gt;Chip 2&lt;/mdc-chip&gt;
+    &lt;mdc-chip&gt;Chip 3&lt;/mdc-chip&gt;
+    &lt;mdc-chip&gt;Chip 4&lt;/mdc-chip&gt;
+  &lt;/mdc-chip-set&gt;</code-prism></pre>
+        <p>more to come...</p>
+      </section>
+    </mdc-grid-cell>
+  </mdc-grid>
+</template>

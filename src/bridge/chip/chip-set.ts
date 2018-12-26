@@ -14,6 +14,7 @@ export class MdcChipSet {
   private unbind() { /** */ }
 
   private attached() {
+    console.log("MdcChipSet attached()")
     this.mdcElement = new MDCChipSet(this.chipSetElement);
   }
 

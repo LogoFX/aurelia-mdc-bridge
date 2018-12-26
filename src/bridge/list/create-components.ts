@@ -95,7 +95,7 @@ function moveSlotElements(node: HTMLElement, base: HTMLElement) {
 
   // loop child nodes
   while (node.firstChild) {
-    const childNode = node.firstChild;
+    const childNode = <HTMLElement>node.firstChild;
     if (childNode.attributes) {
 
       const slotAtr = childNode.attributes.getNamedItem('slot');
