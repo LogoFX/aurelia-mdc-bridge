@@ -1,5 +1,5 @@
 <template>
-    <mdc-chip-set>
+    <div class="mdc-chip-set mdc-chip-set--choice">
         <div class="mdc-chip">
           <div class="mdc-chip__checkmark" >
             <svg class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
@@ -29,7 +29,7 @@
               </div>
               <div class="mdc-chip__text">Filterable content 3</div>
             </div>
-    </mdc-chip-set>
+          </div>
 
   <!-- SAMPLE-->
   <mdc-grid>
@@ -37,10 +37,10 @@
       <h4>Chips</h4>
     </mdc-grid-cell><!-- EXAMPLE-->
     <mdc-grid-cell span="12">
-      <mdc-chip-set>
-        <mdc-chip selected="true">Chip 1</mdc-chip>
+      <mdc-chip-set choice="true">
+        <mdc-chip>Chip 1</mdc-chip>
         <mdc-chip>Chip 2</mdc-chip>
-        <mdc-chip>Chip 3</mdc-chip>
+        <mdc-chip selected="true">Chip 3</mdc-chip>
         <mdc-chip>Chip 4</mdc-chip>
       </mdc-chip-set>
     </mdc-grid-cell><!-- LINKS-->

@@ -6,15 +6,13 @@ export class MdcChip {
   private chipElement: HTMLDivElement;
   private mdcElement: MDCChip;
 
-  @bindable() public selected: boolean = false;
+  @bindable() 
+  public selected: boolean = false;
 
   constructor(private element: Element) {
-    console.log("MdcChip .ctor, Element="+element)
   }
 
   private attached() {
-
-    console.log("MdcChip attached()")
 
     this.mdcElement = new MDCChip(this.chipElement);
     this.selectedChanged(this.selected);
@@ -25,18 +23,19 @@ export class MdcChip {
       'mdc-chip--selected',
     ];
 
-    if (this.element) {
-      this.element.classList.remove(...classes);
+    if (this.chipElement) {
+      this.chipElement.classList.remove(...classes);
     }
 
     if (this.mdcElement) {
-       this.mdcElement.destroy(); }
+       this.mdcElement.destroy(); 
+    }
   }
 
   private selectedChanged(newValue: boolean) {
     const value = util.getBoolean(newValue);
-    if (this.element) {
-      this.element.classList[value ? 'add' : 'remove']('mdc-chip--selected');
+    if (this.chipElement) {
+      this.chipElement.classList[value ? 'add' : 'remove']('mdc-chip--selected');
     }
   }
 }
