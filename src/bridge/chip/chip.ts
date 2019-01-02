@@ -6,8 +6,14 @@ export class MdcChip {
   private chipElement: HTMLDivElement;
   private mdcElement: MDCChip;
 
-  @bindable() 
+  @bindable({ defaultBindingMode: bindingMode.twoWay }) 
   public selected: boolean = false;
+
+  @bindable()
+  public leading: string = null;
+  
+  @bindable()
+  public trailing: string = null;
 
   constructor(private element: Element) {
   }
