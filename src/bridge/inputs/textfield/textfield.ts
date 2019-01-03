@@ -134,15 +134,15 @@ export class MdcTextField {
 
   private valueChanged(newValue: string) {
     // TODO: validation if value is updated from other controls or script
-    const isAbove = this.elementLabel.classList.contains('mdc-text-field__label--float-above');
+    const isAbove = this.elementLabel.classList.contains('mdc-floating-label--float-above');
 
     if (newValue && newValue.length > 0) {
       if (!isAbove) {
-        this.elementLabel.classList.add('mdc-text-field__label--float-above');
+        this.elementLabel.classList.add('mdc-floating-label--float-above');
       }
     } else {
       if (isAbove) {
-        this.elementLabel.classList.remove('mdc-text-field__label--float-above');
+        this.elementLabel.classList.remove('mdc-floating-label--float-above');
       }
     }
   }
@@ -235,7 +235,7 @@ export class MdcTextField {
   private prefilledChanged(newValue) {
     const value = util.getBoolean(newValue);
     this.elementMain.classList[value ? 'add' : 'remove']('mdc-text-field--upgraded');
-    this.elementLabel.classList[value ? 'add' : 'remove']('mdc-text-field__label--float-above');
+    this.elementLabel.classList[value ? 'add' : 'remove']('mdc-floating-label--float-above');
   }
 
   private helptextShowChanged(newValue) {
