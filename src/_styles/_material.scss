@@ -48,7 +48,7 @@ body {
 }
 h4 {
   @include mdc-typography(display1);
-  @include mdc-typography-adjust-margin(headline);
+  //@include mdc-typography-adjust-margin(headline);
 }
 h5 {
   @include mdc-typography(headline);

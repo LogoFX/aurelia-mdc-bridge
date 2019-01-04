@@ -42,3 +42,4 @@ Thumbs.db
 
 # use public npm package server
 # .npmrc
+/yarn.lock
