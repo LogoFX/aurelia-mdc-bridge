@@ -6,12 +6,13 @@ import * as util from '../util';
 @customElement('mdc-chip-set')
 @autoinject
 export class MdcChipSet {
+
+  @bindable()
+  public choice: boolean = false;
+
   private log: Logger;
   private chipSetElement: HTMLDivElement;
   private mdcElement: MDCChipSet;
-
-  @bindable() 
-  public choice: boolean = false;
 
   constructor(private element: Element) {
     this.log = getLogger('mdc-chip-set');
@@ -38,7 +39,7 @@ export class MdcChipSet {
     }
 
     if (this.mdcElement) {
-       this.mdcElement.destroy(); 
+       this.mdcElement.destroy();
     }
   }
 
