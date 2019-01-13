@@ -9,7 +9,7 @@ button.secondary-filled {
 
 button.secondary-stroked {
   @include mdc-button-ink-color($mdc-theme-secondary);
-  @include mdc-button-stroke-color($mdc-theme-secondary);
+  @include mdc-button-outline-color($mdc-theme-secondary);
   @include mdc-states(secondary);
 }
 
@@ -18,5 +18,5 @@ button.big-round-corner {
 }
 
 button.thick-stroke {
-  @include mdc-button-stroke-width(4px);
+  @include mdc-button-outline-width(4px);
 }
