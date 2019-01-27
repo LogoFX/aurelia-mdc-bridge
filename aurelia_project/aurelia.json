@@ -171,9 +171,9 @@
             "main": "mdc.snackbar"
           },
           {
-            "name": "@material/tabs",
-            "path": "../node_modules/@material/tabs/dist",
-            "main": "mdc.tabs"
+            "name": "@material/tab-bar",
+            "path": "../node_modules/@material/tab-bar/dist",
+            "main": "mdc.tabbar"
           },
           {
             "name": "@material/textfield",

@@ -1,5 +1,5 @@
 import { inject, bindable, bindingMode, TaskQueue } from 'aurelia-framework';
-import { MDCTabBarScroller } from '@material/tabs';
+import { MDCTabBarScroller } from '@material/tab-bar';
 import * as util from '../util';
 
 @inject(Element, TaskQueue)

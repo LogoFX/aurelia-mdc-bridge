@@ -72,7 +72,7 @@
     "___end-docs___": ""
   },
   "dependencies": {
-    "material-components-web": "0.35.0"
+    "material-components-web": "0.38.0"
   },
   "peerDependencies": {},
   "devDependencies": {
@@ -208,9 +208,9 @@
               "main": "mdc.snackbar"
             },
             {
-              "name": "@material/tabs",
-              "path": "../node_modules/@material/tabs/dist",
-              "main": "mdc.tabs"
+              "name": "@material/tab-bar",
+              "path": "../node_modules/@material/tab-bar/dist",
+              "main": "mdc.tabbar"
             },
             {
               "name": "@material/textfield",
